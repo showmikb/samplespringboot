@@ -1,9 +1,7 @@
 pipeline
 	{
-		agent any 
-			{
-				stages 
-					{
+		agent any {
+				stages {
 						stage ('Git Pull')
 							{
 								steps
