@@ -16,13 +16,13 @@ pipeline
 					
 					stage ('Build')
 						{
-							when 
-								{
-									$env.branch "master"
-								}
+// 							when 
+// 								{
+// 									$env.branch "master"
+// 								}
 							steps
 								{
-									sh 'mvn clean install'
+									sh 'mvn clean package'
 								}
 							
 						}
