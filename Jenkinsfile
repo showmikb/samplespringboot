@@ -26,6 +26,14 @@ pipeline
 								}
 							
 						}
+					stage ('Archieve Artifacts')
+					{
+						steps
+						{
+							echo ' now Archiving '
+							archiveArtifacts artifacts: '**/*.jar'
+						}
+					}
 						
 // 					stage ('SonarScan')
 // 						{
