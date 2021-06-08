@@ -18,7 +18,7 @@ pipeline
 						{
 							when 
 								{
-									branch "master"
+									$env.branch "master"
 								}
 							steps
 								{
